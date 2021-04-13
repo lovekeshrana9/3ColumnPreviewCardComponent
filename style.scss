@@ -4,38 +4,53 @@ $veryDarkCyan: hsl(179, 100%, 13%);
 $transparentWhite: hsla(0, 0%, 100%, 0.75);
 $veryLightGray: hsl(0, 0%, 95%);
 
-body{
+body {
     background-color: $veryLightGray;
+    height: 100vh;
+    
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: row;
 }
 
-.card{
+.card {
     border: 1px solid black;
     padding: 20px 40px;
-    & > h1{
+    & > h1 {
         color: $veryLightGray;
-        font-family:  'Big Shoulders Display', cursive;
+        font-family: "Big Shoulders Display", cursive;
         font-weight: 700;
+    }
+    & > p {
+        color: $veryLightGray;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Lexend Deca", cursive;
     }
 }
 
-.card:first-child{
+.card:first-child {
     background-color: $brightOrange;
 }
 
-.card:nth-of-type(2){
+.card:nth-of-type(2) {
     background-color: $darkCyan;
 }
 
-.card:last-child{
+.card:last-child {
     background-color: $veryDarkCyan;
 }
 
-.learn-more{
+.learn-more {
     border: 1px solid $veryLightGray;
-    border-radius: 12px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: $veryLightGray;
+    background-color: transparent;
+}
+
+.learn-more:hover{
+    cursor: pointer;
 }

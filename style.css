@@ -1,5 +1,6 @@
 body {
   background-color: #f2f2f2;
+  height: 100vh;
 }
 
 .flex {
@@ -19,8 +20,15 @@ body {
 
 .card > h1 {
   color: #f2f2f2;
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
+}
+
+.card > p {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Lexend Deca", cursive;
 }
 
 .card:first-child {
@@ -37,6 +45,13 @@ body {
 
 .learn-more {
   border: 1px solid #f2f2f2;
-  border-radius: 12px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: #f2f2f2;
+  background-color: transparent;
+}
+
+.learn-more:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
