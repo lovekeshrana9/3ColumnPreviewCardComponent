@@ -39,20 +39,30 @@ body {
   background-color: #e38826;
 }
 
+.card:first-child > button {
+  color: #e38826;
+}
+
 .card:nth-of-type(2) {
   background-color: #006970;
+}
+
+.card:nth-of-type(2) > button {
+  color: #006970;
 }
 
 .card:last-child {
   background-color: #004241;
 }
 
+.card:last-child > button {
+  color: #004241;
+}
+
 .learn-more {
   border: 1px solid #f2f2f2;
   border-radius: 20px;
   padding: 10px 15px;
-  color: #f2f2f2;
-  background-color: transparent;
   margin-bottom: 20px;
   font-family: "Lexend Deca", cursive;
   font-size: 15px;
@@ -62,7 +72,9 @@ body {
   outline: none;
 }
 
-.learn-more:hover {
+.card button.learn-more:hover {
+  background-color: transparent;
+  color: #f2f2f2;
   cursor: pointer;
 }
 

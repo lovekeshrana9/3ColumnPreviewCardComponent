@@ -36,22 +36,29 @@ body {
 
 .card:first-child {
     background-color: $brightOrange;
+    & > button{
+        color: $brightOrange;
+    }
 }
 
 .card:nth-of-type(2) {
     background-color: $darkCyan;
+    & > button{
+        color: $darkCyan;
+    }
 }
 
 .card:last-child {
     background-color: $veryDarkCyan;
+    & > button{
+        color: $veryDarkCyan;
+    }
 }
 
 .learn-more {
     border: 1px solid $veryLightGray;
     border-radius: 20px;
     padding: 10px 15px;
-    color: $veryLightGray;
-    background-color: transparent;
     margin-bottom: 20px;
     font-family: "Lexend Deca", cursive;
     font-size: 15px;    
@@ -61,7 +68,9 @@ body {
     outline: none;
 }
 
-.learn-more:hover {
+.card button.learn-more:hover {
+    background-color: transparent;
+    color: $veryLightGray;
     cursor: pointer;
 }
 
