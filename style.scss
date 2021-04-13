@@ -3,11 +3,10 @@ $darkCyan: hsl(184, 100%, 22%);
 $veryDarkCyan: hsl(179, 100%, 13%);
 $transparentWhite: hsla(0, 0%, 100%, 0.75);
 $veryLightGray: hsl(0, 0%, 95%);
+$borderRadius: 12px;
 
 body {
     background-color: $veryLightGray;
-    height: 100vh;
-    
 }
 
 .flex {
@@ -18,6 +17,9 @@ body {
 .card {
     border: 1px solid black;
     padding: 20px 40px;
+    & > img {
+        margin-top: 15px;
+    }
     & > h1 {
         color: $veryLightGray;
         font-family: "Big Shoulders Display", cursive;
@@ -28,6 +30,7 @@ body {
         font-size: 15px;
         font-weight: 400;
         font-family: "Lexend Deca", cursive;
+        margin-bottom: 70px;
     }
 }
 
@@ -49,8 +52,64 @@ body {
     padding: 10px 15px;
     color: $veryLightGray;
     background-color: transparent;
+    margin-bottom: 20px;
+    font-family: "Lexend Deca", cursive;
+    font-size: 15px;    
 }
 
-.learn-more:hover{
+.learn-more:focus {
+    outline: none;
+}
+
+.learn-more:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 70px 15px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+    .card {
+        border-bottom: none;
+        & > p{
+            margin-bottom: 25px;
+        }
+    }
+
+    .card:first-child {
+        border-top-left-radius: $borderRadius;
+        border-top-right-radius: $borderRadius;
+    }
+
+    .card:last-child {
+        border-bottom-left-radius: $borderRadius;
+        border-bottom-right-radius: $borderRadius;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+    body {
+        padding: 0 250px;
+        height: 95vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        border-right: none;
+    }
+    .card:first-child {
+        border-top-left-radius: $borderRadius;
+        border-bottom-left-radius: $borderRadius;
+    }
+    .card:last-child {
+        border-right: 1px solid black;
+        border-top-right-radius: $borderRadius;
+        border-bottom-right-radius: $borderRadius;
+    }
 }
