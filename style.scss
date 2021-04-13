@@ -1,0 +1,41 @@
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+$transparentWhite: hsla(0, 0%, 100%, 0.75);
+$veryLightGray: hsl(0, 0%, 95%);
+
+body{
+    background-color: $veryLightGray;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    border: 1px solid black;
+    padding: 20px 40px;
+    & > h1{
+        color: $veryLightGray;
+        font-family:  'Big Shoulders Display', cursive;
+        font-weight: 700;
+    }
+}
+
+.card:first-child{
+    background-color: $brightOrange;
+}
+
+.card:nth-of-type(2){
+    background-color: $darkCyan;
+}
+
+.card:last-child{
+    background-color: $veryDarkCyan;
+}
+
+.learn-more{
+    border: 1px solid $veryLightGray;
+    border-radius: 12px;
+}

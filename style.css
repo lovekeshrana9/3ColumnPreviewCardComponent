@@ -1,0 +1,42 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 20px 40px;
+}
+
+.card > h1 {
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+}
+
+.card:first-child {
+  background-color: #e38826;
+}
+
+.card:nth-of-type(2) {
+  background-color: #006970;
+}
+
+.card:last-child {
+  background-color: #004241;
+}
+
+.learn-more {
+  border: 1px solid #f2f2f2;
+  border-radius: 12px;
+}
+/*# sourceMappingURL=style.css.map */
